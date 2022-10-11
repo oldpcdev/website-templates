@@ -1,0 +1,35 @@
+/* header */
+@media only screen and (max-width:900px) {
+    header {
+        height: 250px;
+        background: url(../images/header.webp) no-repeat;
+        background-size: 37% 97%;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    header {
+        background-size: 41% 97%;
+        height: 130px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    header {
+        height: 140px;
+    }
+}
+
+@media only screen and (max-width:770px) {
+    header h1 {
+        display: none;
+    }
+}
+
+/* sidebar */
+
+@media only screen and (max-width: 980px) {
+    aside {
+        display: none;
+    }
+}
