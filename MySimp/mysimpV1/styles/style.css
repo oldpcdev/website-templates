@@ -126,7 +126,7 @@ main {
     float: left;
 }
 
-article {border-bottom:1px solid #3C8F99;padding:10px 0px;}
+article {border-bottom:1px solid+ #3C8F99;padding:10px 0px;}
 
 article h1 {
     font-style: italic;

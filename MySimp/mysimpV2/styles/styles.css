@@ -1,0 +1,91 @@
+@charset "utf=8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display&family=Ubuntu:wght@300;400&display=swap');
+
+/* COLORS
+    Sidebar-Blue: #283561;
+    Main Text: #1f1f1f
+    Section H2 background: rgb(49,101,148);
+*/
+
+* { margin: 0px; padding: 0px; }
+
+.clear { clear: both; display: table; }
+
+a { color: unset; text-decoration: none; }
+
+body {
+    background: url(../images/bg.webp) no-repeat top right fixed; background-size: cover; font-family: 'ubuntu', sans-serif;
+}
+
+aside {
+    position: fixed;
+    left: 0px;
+    max-width: 270px;
+    height: 100%;
+    background-color: #284561;
+    color: #fff;
+    font-family: 'lato', sans-serif;
+    padding: 5px 10px;
+    overflow: auto;
+}
+
+aside ul { background-color: #fff; border-radius: 10px; margin: 10px 0px}
+aside li { list-style: none; padding: 10px;}
+aside a{ padding-left: 23px; color: #313963; }
+aside a[href^='https://facebook.com'] { background: url(../images/fb.svg) no-repeat; }
+aside a[href^='https://instagram.com'] { background: url(../images/insta.svg) no-repeat}
+aside a[href^='https://twitter.com'] { background: url(../images/twitter.svg) no-repeat}
+
+#wrapper { margin: 30px 0px 20px 330px; max-width: 770px; background-color: #fff; border-radius: 15px; overflow: hidden}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: transparent url(../images/header.webp) no-repeat center center;
+    background-size: 100% 100%;
+    border: 1px solid rgba(0,0,0,.400);
+}
+
+.banner {
+    background-image: linear-gradient(to top, rgba(49,101,148,.600), rgba(49,101,148,.070)); height: 100%; width: 100%; }
+
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 2px 1px 3px rgba(0,0,0,.5);
+}
+
+main { margin: 20px 0px; padding: 0px 10px }
+
+article h1, article h2 { Font: 400 36px 'playfair display', serif; color: #353535; border-bottom: 1px solid #35353581; margin-bottom: 5px; padding-bottom: 5px; }
+
+article h2 { color: #535353; font: 400 'ubuntu', sans-serif }
+
+article p { padding: 20px 0px; margin: 10px; font-weight: 300; font-size: 18px; line-height: 1.6em; color: #1f1f1f; }
+
+.lists { background-color: #1f1f1f; color: #ffffff; border-radius: 10px; overflow: hidden; font-family: 'lato'; font-weight: 300; }
+
+.lists h2 { background-color: rgba(49,101,148); padding: 10px; }
+
+.lists ul {  columns: 2; padding: 30px 10px; }
+
+.lists li { padding: 10px 18px; background: url(../images/right.svg) no-repeat center left; background-size: 18px 18px; list-style: none; }
+
+.lists a { color: #e7ebff; }
+
+footer { background-color: #1f1f1f; color: #fff; text-align: center; padding: 5px; }
+footer p { padding: 5px; }
+footer p.copyright { border-bottom: 1px solid rgba(255, 255, 255, 0.5) }
+footer p.search { font-weight: bold; }
+footer.bigcopy { color: #e7ebff }
+footer a { color: #bbbbbb }
+
+@media only screen and (max-width:800px) {
+     aside { display: none } #wrapper { margin: 10px 20px; } body { background: url(../images/smbg.webp) center center} .bigcopy {display: none;} 
+}
+
+@media only screen and (min-width:800px) { .copyright,.search {display: none} }
