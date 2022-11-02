@@ -19,25 +19,32 @@
 * { padding: 0px; margin: 0px; box-sizing: border-box; }
 
 body {
-	height: 100vh;
-	width: 100vw;
-	backgroud-color: #3d3d3d;
+	height: 100%;
+	width: 100%;
+	background: #ffffff linear-gradient(to bottom, #d76a03, white 300px) fixed;
 	font-family: 'ubuntu';
 	font-weight: 300;
-	color: var(--text-gray)
+	color: var(--text-gray);
 }
+
+menu { width: 100%; height: 80px; background-color: #bf31002a; color: #ffffff; padding: 10px 0px 0px 10px; }
+
+menu ul > li { display: inline-block; font-size: 23px; }
+
+menu ul > li > a { color: #fff; text-decoration: none; vertical-align: super; }
+
+menu img { width: 24px; }
 
 .wrapper {
-	max-width: 900px;
+	max-width: 980px;
 	background-color: #ffffff;
-	margin: 10px auto;
+	margin: 0px auto 10px auto;
+	box-shadow: 2px 4px 6px 2px rgba(0,0,0,.4);
 }
 
-nav {
-	background-color: #D76A03;
-	width: 26%;
-	border-bottom: 5px solid var(--cool-gray);
-}
+.wrapper2 { border: 1px solid rgba(0,0,0,.4); border-top: none; }
+
+nav { background-color: #D76A03; width: 26%; border-bottom: 5px solid var(--cool-gray); }
 
 nav li {
 	display: inline-block;
@@ -45,8 +52,10 @@ nav li {
 }
 
 nav a {
-	color: #Ffffff;
+	color: #ffffff;
 	text-decoration: none;
+	vertical-align: super;
+	font-size: 15px;
 }
 
 nav .hdicons {
@@ -54,35 +63,53 @@ nav .hdicons {
 }
 
 header {
+	position: relative;
 	width: 100%;
-	height: 300px;
-	background: url(../images/header.jpg) no-repeat;
-	background-size: cover;
+	height: 370px;
+	background: url(../images/header.jpg) fixed;
 }
 
+header h1 { color: #ffffff; position: absolute; top: 0%; left: 50%; transform: translate(-50%, 0); margin: 20px 0px}
+
+header table { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+header table td { padding: 0px 20px; }
+
+header table td p { color: #ffffff; text-align: center; padding-top: 3px;}
+
+header table td p .down { color: #ffffff7a; font: italic 200 15px 'montserrat', sans-serif; }
+
+header table td img { display: block; margin: auto; width: 120px; border-radius: 50%; -webkit-box-reflect: below -40px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4)); cursor: pointer; }
+
+header table td img:hover { width: 150px; transition: .4s ease-in-out; padding-bottom: 10px; -webkit-box-reflect: below -40px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.2));}
+
 main {
-	width: 600px;
+	max-width: 600px;
 	margin-top: 20px;
 }
 
+article h1 { padding-left: 10px; }
+
 article p {
-	padding: 20px 5px;
+	padding: 20px 15px;
 	font: 300 24px 'montserrat';
 	text-indent: 10px;
 }
 
+article .bgcontent { background-size: cover; width: 300px; height: 300px; }
+
 article figure { position: relative; overflow: hidden; }
 
-article figure img:hover { opacity: 0.5; transition: .9s all ease; }
+article figure img:hover { opacity: 0.8; transition: .9s all; }
 
 article figure figcaption { 
 	position: absolute; 
 	bottom: 0px; 
-	width: 100%; 
+	width: 100%;
 	background-color: rgba(0,0,0,.0); 
 	color: #ffffff; 
 	text-align: center;
-	transition: .3s;
+	transition: .9s;
 	visibility: hidden;	
 }
 
@@ -91,18 +118,59 @@ article figure:hover figcaption {
 	background-color: rgba(0,0,0,.4)
 }
 
-.wrapper2 {
-
-}
-
-.right {
+aside.right {
+	position: relative;
 	float: right;
-	width: 200px;
+	width: 220px;
 	margin-top: 20px;
-	padding: 4px;
-	background-color: var(--cleangreen);
+	margin-right: 10px;
+	padding: 15px 5px 20px 10px;
+	background: var(--cleangreen);
 	font: 300 18px 'catamaran';
 	color: #000;
+	border-radius: 0px 0px 40px 0px;
+	box-shadow: 1px 1px 10px rgba(0,0,0,.8);
+	animation-name: clip;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
 }
 
+@keyframes clip {
+	from{transform: rotate(1deg)}
+	to{transform: rotate(3deg)}
+}
+
+aside.right img.clip { width: 40px; position: absolute; right: 0; top: -18px; transform: rotate(3deg); }
+
+aside.right img.urna { width: 150px; margin: auto; display: block }
+
+aside.right h2 { font-style: italic; font-family: 'ubuntu',sans-serif; color: #454545; padding-bottom: 4px; margin-bottom: 4px; border-bottom: 1px solid rgba(0,0,0,.4) }
+
 footer { background-color: var(--citron); padding: 5px; color: #ffffff; font: 300 23px 'ubuntu'; }
+
+@media only screen and (max-width:822px) {
+	aside.right { display: none; }
+}
+
+@media only screen and (max-width:610px) {
+	article figure figcaption { display: none; }
+	article figure img { display: block; margin: auto; }
+}
+
+@media only screen and (max-width:515px) {
+	header {display: none;}
+}
+
+.mobile-header { padding: 0px 0px 20px 10px; } .mobile-header ul > li { list-style: none;  } .mobile-header ul { padding-left: 10px; }
+
+@media only screen and (min-width:514px) {
+	.mobile-header { display: none;  } 
+}
+
+@media only screen and (max-width:521px) {
+	menu ul {display: none} menu { height: 90px }
+}
+
+@media only screen and (max-width:305px) {
+	menu { height: 100px; }
+}
