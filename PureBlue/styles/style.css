@@ -1,0 +1,258 @@
+/* FULL CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@font-face {
+    src: url('../fonts/Bebas-Regular.otf');
+    font-family: bebas;
+}
+
+/* COLORS
+    1 - #114161 DARKBLUE
+    2 - #83CBFA WHITECYAN
+    3 - #2897E0 PUREBLUE
+    4 - #575D61 GREY
+    5 - #1F75AD DARKBLUE2
+*/
+
+*, *::after, *::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+.clearfix::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+body {
+    height: 100vh;
+    font: 400 18px 'open sans';
+    background: #575d617c;
+}
+
+#main {
+    margin: 0px auto;
+    width: 1000px;
+    background: #ffffff;
+    border-radius: 0% 0% 7px 7px;
+    box-shadow: 2px 2px 20px 1px #00000080;
+    overflow: hidden;
+}
+
+#main #header {
+    padding-top: 5px; 
+}
+
+#main #header #nav {
+    margin: 0px 10px;
+}
+
+#main #header #nav > ul > li {
+    display: inline;
+
+    text-transform: uppercase;
+    padding: 1px 5px;
+
+    background: #3a5b70;
+    border-top: 2px solid #2897E0;
+
+    transition: background-color 1s;
+}
+
+#main #header #nav > ul > li:hover {
+    background-color: #ffffff;
+}
+
+#main #header #nav > ul > li > a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color .4s linear .050s, text-decoration .5s;
+}
+
+#main #header #nav > ul > li > a:hover {
+    color: #000000e5;
+    text-decoration: underline;
+}
+
+#main #header #header-bg {
+    position: relative;
+    background: url('../images/header.jpg') fixed;
+    background-size: cover;
+    height: 300px;
+    min-width: 200px;
+    margin: 0px 3px;
+
+}
+
+#main #header #header-bg .header-bg-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: bebas;
+    text-shadow: 1px 1px 3px #000000a4;
+}
+
+#main #header #header-bg .header-bg-text p {
+    font: 600 20px arial, helvetica, sans-serif;
+    color: #ffffffcc;
+    text-indent: 5px;
+}
+
+#main div#content {
+    position: relative;
+}
+
+#main div#content > .content-box {
+    margin: 20px;
+    width: 500px;
+    float: left;
+}
+
+#main div#content .content-box > p > a {
+    color: #ffffff;
+    text-decoration: none;
+    
+    background-color: #114161;
+    padding: 5px;
+
+    border-bottom: 3px solid #1F75AD;
+    border-radius: 10% 10% 0% 0%;
+}
+
+#main div#content > .content-box p  {
+    line-height: 1.8em;
+    font-size: 1.310vw;
+    color: #5f5d5d;
+}
+
+#main div#content > .content-box h2 {
+    margin: 10px 0px;
+    color: #114161;
+}
+
+#main div#content #sidebar {
+    position: absolute;
+    top: 20px;
+    right: 3px;
+}
+
+#main div#content #sidebar-content {
+    position: relative;
+
+    background: #363636;
+    color: #ffffff;
+    min-width: 300px;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+}
+
+#main div#content #sidebar-content li > a {
+    color: #e6e6e6;
+    text-decoration: none;
+
+    background: url('../images/list.gif') no-repeat center left;
+    padding-left: 10px;
+}
+
+#main div#footer {
+    position: relative;
+
+    background: url('../images/footer.jpg');
+    background-size: cover;
+
+    min-width: 100%;
+    max-width: 100vw;
+    height: 200px;
+
+    color: #fff;
+    text-align: center;
+}
+
+#main div#footer h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+    font: 300 30px bebas;
+    border-bottom: 2px solid #2897E0;
+}
+
+#main div#footer ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#main div#footer ul > li {
+    display: inline-block;
+    padding-top: 20px;
+    margin-top: 11px;
+    padding-left: 10px;
+
+    background: url('../images/list.gif') no-repeat;
+    background-position: 0px 27px
+}
+
+#main div#footer li > a {
+    color: #e6e6e6;
+    text-decoration: none;
+    transition: color 2s, text-decoration 5s linear, font-weight 2s;
+}
+
+#main div#footer li > a:hover {
+    text-decoration: underline;
+    color: #6d6d6d;
+
+    background: url('../images/list-hover.gif') no-repeat;
+    background-position: 0px 27px;
+
+    font-weight: bold;
+}
+
+#main #footer2 {
+    background: #4b363a;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+    cursor: context-menu;
+}
+
+#main #footer2 a {
+    color: #ffffff;
+    animation-name: footarrow;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes footarrow {
+    10%{font-size:0px}
+    50%{font-size:20px}
+    100%{font-size: 40px;}
+}
+
+#fixed {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+
+    background-color: #83CBFA;
+    padding: 10px;
+    display: inline;
+}
+
+div.footer {margin-top: 20px; background-color: #363636; text-align: center; color: #b4b4b4;padding: 10px; font: 100 16px georgia; clear: both;}
+div.footer a {color: #cccccc; text-decoration: none; transition: color 1s, text-decoration 5s;}
+div.footer a:hover {color: #b4b4b4; text-decoration: underline;}

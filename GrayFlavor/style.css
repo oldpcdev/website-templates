@@ -1,0 +1,400 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* FONTS
+*/
+
+@font-face {
+    font-family: confortaa-light;
+    src: url("fonts/Comfortaa-Light.ttf");
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url("fonts/Bebas-Regular.otf");
+}
+
+/* Colors
+*/
+
+* {
+	margin: 0px; padding: 0px; list-style: none;
+}
+
+:root {
+    --azulzinho: #5b79ff;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    background: #F5F5F7 url('stripped-bg2.jpg') fixed;
+}
+
+a {
+    color: #9c9c9c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #9696c4;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+h2.h2-confortaa {
+    font: 600 20px confortaa-light
+}
+
+.wrapper {
+    margin: auto;
+    max-width: 80%;
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #fff;
+}
+
+/* HEADER
+*/
+
+header {
+    background: #8c8c8c;
+    padding: 30px 10px;
+}
+
+header > h2 {
+    font: 30px 'bebas';
+    color: #ffffff;
+    text-align: center;
+}
+
+header > p {
+    text-align: center;
+    font: 15px confortaa-light;
+    color: #0000004d;
+}
+
+
+/* MENU
+*/
+
+div.nav {
+    position: absolute;
+    top: 82px;
+    margin: 0px
+}
+
+div.nav li {
+    display: inline;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    font-family: confortaa-light;
+    transition: 0.3s;
+}
+
+div.nav li:hover {
+    background-color: #eeb242f3;
+}
+
+div.nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* CONTENT
+*/
+
+div.subheader {
+    max-width: 553px;
+    height: auto;
+    background: url('greenbubble.jpg') top right fixed;
+    color: #ffffff;
+    padding: 10px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+div.subheader img {
+    float: right;
+    width: 70%;
+    height: 400px;
+    margin: 5px;
+    padding: 5px;
+    transition: rotate 3s;
+    animation-name: img-animate;
+    animation-duration: 3s;
+    animation-delay: 5ms;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes img-animate {
+    from {width: 190px;}
+    to {width: 290px}
+    from {height: 140px}
+    to {height: 200px}
+    from {rotate: 0deg}
+    to {rotate: 3deg}
+}
+
+/* Tooltip container */
+
+.tooltip {
+    position: relative;
+
+}
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 160px;
+    color: #ffffffd0;
+    text-align: center;
+    background-color: #414141;
+    padding: 5px 2px 2px 2px;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    top: 200px;
+    right: 100px;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+/* TOLLTIP CONTAINER */
+
+div.subheader p:nth-child(1n) {
+    margin: 10px 10px 10px 13px;
+    line-height: 1.6em;
+    text-shadow: 1px 1px 3px #0000004d
+}
+
+div.subheader p:last-child {
+    float: right;
+}
+
+div.subheader h2 {
+    padding: 10px;
+    border-bottom: 1px solid #ffffff;
+}
+
+div.principal {
+    margin: 30px 0px 30px 20px;
+}
+
+div.content {
+    max-width: 400px;
+}
+
+.principal div.content-box {
+    margin: 10px 10px;
+    color: #3a3a3a;
+}
+
+.principal div.content-box a {
+    color: var(--azulzinho);
+}
+
+.principal div.content-box a:hover {
+    color: #67788d
+}
+
+.principal div.content-box a::before {
+    content: "🔗";
+}
+
+div.content-box .imgbox {
+    float: right;
+    border: 1px double #0000004d;
+    padding: 10px;
+    margin: 10px 10px 10px 15px;
+    width: 100px;
+    height: 80px;
+    transition: width 2s, height 2s linear .005s;
+    overflow: hidden;
+}
+
+div.content-box .imgbox:hover {
+    width: 110px;
+    height: 90px
+}
+
+div.content .imgbox > p {
+    font: 800 19px bebas, sans-serif;
+    text-shadow: 1px 1px 4px #0000004d;
+    display: inline;
+    text-align: center;
+}
+
+div.content .imgbox > img {
+    transition: 2s;
+}
+
+div.content .comment {
+    background: url('comment.gif') no-repeat center center;
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+    float: right;
+}
+
+div.content .comment > span {
+    color: #fff;
+    font: 700 20px open sans;
+    text-align: center;
+    vertical-align: super;
+    margin: 15px 0px 0px 10px;
+}
+
+.principal .subtitle {
+    display: inline-block;
+    width: 400px
+}
+
+div.content .subtitle h6 {
+    font: 14px lucida sans;
+    background: #868686;
+    color: #fff;
+    padding: 3px;
+    border-bottom: 3px solid #eeb242;
+    float: left;
+}
+
+.principal h2 {
+    border-left: 3px dashed #eeb242;
+    background: linear-gradient(to right, #f8f8f8, #fff);
+    padding: 5px;
+    margin: 0px 0px 0px 0px;
+    font-size: 1.5em
+}
+
+.principal h6 a {
+    color: #cfcfcf;
+    transition: .5s;
+}
+.principal h6 a:hover{color: #eeb242}
+
+.principal sub {
+    font: 900 10px 'open sans';
+    vertical-align: bottom;
+    text-shadow: 2px 2px 3px #ffffff77
+}
+
+.principal p {
+    font-size: 1.25em;
+    font-weight: 500;
+    text-indent: 10px;
+    font-family: 'open sans';
+}
+
+blockquote {
+    max-width: 550px;
+    margin: 20px;
+    padding: 30px;
+    background-color: #646464;
+}
+
+blockquote p {
+    background: url('quote.svg') no-repeat;
+    text-indent: 1.5em;
+    color: #eceaea
+}
+
+/* SIDEBAR
+*/
+
+div.sidebar {
+    position: absolute;
+    right: 0;
+    top: 140px;
+    background-position: center right;
+}
+
+div.sidebar h2 {
+    padding: 5px 5px 5px 10px;
+    margin-bottom: 10px;
+}
+
+div.sidebar > .sidebar-item {
+    margin-right: 220px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #00000031;
+    width: 300px;
+    background: linear-gradient(to bottom, #f0f0f0, #ffffff);
+}
+
+div.sidebar .sidebar-list li {
+    text-align: center;
+    border: none !important;
+    color: #888888;
+}
+
+div.sidebar .sidebar-list a {
+    color: #111111;
+    background: url('li2.png') no-repeat center left;
+    padding-left: 15px;
+}
+
+div.sidebar .sidebar-list a:hover {
+    color: #6b6969
+}
+
+div.sidebar .sidebar-list h3 {
+    font: bold 23px confortaa-light;
+    text-align: center;
+}
+
+div.sidebar p {
+    line-height: 1.7em;
+    font: 200 16px 'open sans';
+}
+
+div.sidebar li {
+    margin: 10px 0px;
+    border-bottom: 1px dashed #5b79ffc4;
+    padding-bottom: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div.sidebar li > a {
+    color: #a85252;
+}
+
+/* TEMPLATE FOOTER */ 
+div.tplfooter {
+    background: url('ftbg6.jpg') #91afaf;
+    color: #fff;
+    font: 16px 'open sans'; 
+    padding: 10px;
+    text-align: center;
+}
+
+div.footer {
+    margin-top: 20px;
+    background-color: #363636;
+    text-align: center;
+    color: #cccccc;
+    padding: 10px;
+    font: 100 16px georgia;
+}
+
+.index { background: #434343; color: #fff; padding: 10px; text-align: center; font-size: 20px }
+
+@media only screen and (max-width:1290px) { .sidebar { display: none } }
+
+@media only screen and (max-width:1070px) { .wrapper { max-width: 100% } }
+
+@media only screen and (min-width:600px) { .index { display: none } }
+
+@media only screen and (max-width:600px) { .nav { display: none } .subheader { display: none; } }
+
+@media only screen and (max-width:550px) { .content-box .imgbox, .comment { display: none; } }

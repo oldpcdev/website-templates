@@ -1,0 +1,102 @@
+/* ICON AND IMAGE CONFIG */
+
+.content-box .img-box {
+    position: relative;
+}
+
+.content-box .img-box > img {
+    width: 90%;
+    height: auto;
+    margin: 20px 0px;
+    padding: 3px;
+    border: 1px solid #00000036;
+    transition: .5s ease;
+}
+
+.content-box .img-box > img:hover {
+    background-color: #5a5a5a;
+    opacity: .150;
+}
+
+.content-box .img-box > p.imgtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+
+    display: none;
+    transition: display 4s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+.content-box .img-box:hover > p.imgtext {
+    display: block;
+    text-shadow: 1px 1.5px 3px #ffffff;
+}
+
+.content-box .img-box > p.imgtext:hover {
+    display: block;
+    color: #ffffff;
+    text-shadow: 1px 1.5px 3px #00000060;
+}
+
+.content-box .imgbox-in {
+    position: relative;
+    margin: 10px 0px;
+    width: 400px;
+}
+
+.content-box .imgbox-in img {
+    display: block;
+    margin: 0px auto;
+}
+
+@keyframes imgtext-in {
+    from{background: #00000000;color: transparent}
+    to{background: #00000080;color: #ffffffcc}
+}
+
+.content-box .imgbox-in .imgtext-in {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    padding: 20px;
+    font-family: segoe ui, sans-serif;
+
+    animation-name: imgtext-in;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.content-box .imgbox-in .imgtext-in h2 {
+    color: #83CBFA!important;
+}
+
+.content-box .imgbox-in .imgtext-in p {
+    color: #ffffffcb!important;
+    animation-name: imgtext-in;
+    line-height: unset!important;
+}
+
+.content-box .content-img {
+    position: relative;
+    margin: 10px 0px 20px 0px;
+}
+
+.content-box .content-img .imgbox-out a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.content-box .imgbox-out {
+    position: absolute;
+    bottom: -35px;
+    width: 95%;
+
+    padding: 5px;
+    background: #000000da;
+    color: #ffffff!important;
+    margin: 0px!important;
+}
