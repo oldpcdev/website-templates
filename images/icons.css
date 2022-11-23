@@ -1,9 +1,0 @@
-@charset "utf-8";
-
-.icon { background-size: 100%; display: block }
-
-.i-16px { width: 16px }
-
-.i-24px { width: 24px; }
-
-.i-web { background: url(web.svg) no-repeat; background-size: 24px; height: 24px; }
