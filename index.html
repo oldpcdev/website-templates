@@ -139,10 +139,23 @@
 			color: #fff;
 			text-align: center;
 			}
+			
+		@media only screen and (max-width:1050px) { .fmog {display: none } }
+			
+		@media only screen and (max-width:890px) {
+			aside { display: none }
+			main { float: none; margin: auto; }
+			article p { font-size: 1.1em; padding: 0px 10px 5px 10px; }
+			article h4, article h5 { font-size: 24px; padding: 0px 0px 10px 10px; }
+			}
+			
+		@media only screen and (max-width:595px) { article p { max-width: 500px; } }
+		@media only screen and (max-width:525px) { article p { max-width: 40%; text-align: justify } }
+		@media only screen and (max-width:350px) { article h4, article h5 { font-size: 18px; } }
 	</style>
 </head>
 <body>
-	<a href="https://github.com/oldpcdev/website-templates.git"><img style="position: fixed; top: 0; left: 0;" decoding="async" loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_darkblue_121621.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+	<a class="fmog" href="https://github.com/oldpcdev/website-templates.git"><img style="position: fixed; top: 0; left: 0; z-index: 2;" decoding="async" loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_darkblue_121621.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
 	<div class="wrapper">
 		<header>
 			<div class="banner">
