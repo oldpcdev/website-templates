@@ -32,4 +32,10 @@
     aside {
         display: none;
     }
+    
+    article #follow { display: block }
+}
+
+@media only screen and (min-width: 981px) {
+	article #follow { display: none }
 }

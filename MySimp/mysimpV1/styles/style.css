@@ -11,6 +11,8 @@
 
 a {color: unset; text-decoration: none;}
 
+li { list-style: none; }
+
 input {border: 1px solid rgba(0,0,0,.250);width:69%}
 
 .clear {
@@ -120,6 +122,17 @@ aside button.follow-me:hover {
 
 aside button.follow-me > a {color: #3C8F99;}
 
+aside section#follow img {
+	width: 33px;
+}
+
+aside section#follow li {
+	display: inline-block;
+	margin: auto;
+	padding-right: 5px;
+	background: none;
+}
+
 main {
     max-width: 540px;
     padding: 0px 0px;
@@ -141,6 +154,29 @@ article h2 {
     font-family: 'pt serif', serif;
     color: #3C8F99;
     border-bottom: 1px dashed rgba(0,0,0,.250);
+}
+
+article section#follow img {
+	width: 70px;
+}
+
+article section#follow ul.socialimg li {
+	display: inline-block;
+	margin: auto;
+	padding-right: 40px;
+}
+
+article section#follow ul.links {
+	padding-left: 20px;
+}
+
+article section#follow ul.links li {
+	display: inline;
+	font-size: 20px;
+}
+
+article section#follow ul.links li a {
+	color: #768afc
 }
 
 article p {
