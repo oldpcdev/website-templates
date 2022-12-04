@@ -114,6 +114,10 @@ nav > ul > li .hovercont > ul .subhover ul > li {
 	padding: 6px;
 }
 
+.header-space { 
+	height: 40px;
+}
+
 .wrapper {
 	max-width: 100%;
 }
@@ -301,60 +305,4 @@ footer {
 footer p {
 	text-align: center;
 	color: #fff;
-}
-
-@media only screen and (min-width:1325px) {
-	article#resp { display: none }
-}
-
-@media only screen and (max-width:1324px) {
-	aside { display: none; }
-	main { max-width: 1100px; margin-left: 30px }
-	main article .gallery figure img { width: 300px; height: 290px; }
-}
-
-@media only screen and (max-width:1088px) {
-
-	main article .gallery figure img { max-width: 200px; max-height: 190px; }
-}
-
-@media only screen and (max-width:995px) {
-	main article { margin: 10px 0px 10px 0px }
-	main { margin-left: 30px }
-}
-
-@media only screen and (max-width:780px) {
-	main { margin: auto; }
-}
-
-@media only screen and (min-width:780px) {
-	article { border-radius: 14px }
-}
-
-@media only screen and (max-width:670px) {
-	header nav { display: none; }
-	main article .gallery figure img { max-width: 230px; max-height: 220px; }
-}
-
-@media only screen and (max-width:570px) {
-	main article > img { max-width: 510px }
-}
-
-@media only screen and (max-width:460px) {
-	main article > img { max-width: 400px }	
-}
-
-@media only screen and (max-width:390px) {
-	main article .gallery figure img { max-width: 110px; max-height: 100px; }
-}
-
-@media only screen and (max-width:335px) {
-	main article > img { max-width: 300px }
-	main article .gallery figure { margin-left: 10px; }
-}
-
-@media only screen and (max-width:260px) {
-	main article > img { max-width: 230px }
-	main article .gallery figure img { width: 70px; height: 80px; }
-	
 }
