@@ -1,2 +1,3 @@
 # My Simple Website Templates
-MySimp is a pack of simple and clean website templates, and the design is complete based on Web 2.0. 
+MySimp is a pack of simple and clean website templates, and i love it.
+The simplicity is the principal of this project.
