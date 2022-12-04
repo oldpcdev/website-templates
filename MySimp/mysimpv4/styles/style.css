@@ -1,0 +1,360 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:ital@1&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Roboto+Serif:ital,opsz,wght@0,8..144,300;1,8..144,300&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap');
+
+.clear { clear: both; display: block; }
+
+li { list-style: none }
+
+h1,h2,h3,h4,h5,h6 { font-family: 'roboto', 'open sans', sans-serif; }
+
+a { color: unset; text-decoration: none }
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	max-width: 100vw;
+	height: 100vh;
+	font-family: 'open sans', ubuntu, arial, sans-serif;
+	color: #6a6a6a;
+	background: url(../images/bg.png) no-repeat fixed;
+	background-size: 40% 40%;
+	background-position: 830px 400px;
+}
+
+.container {
+	min-height: 100%;
+	max-width: 100%;
+	background: #0000004f url(../images/bg01.png) fixed;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	height: 30px;
+	z-index: 2;
+	background: #454544;
+}
+
+.header-cont {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+header h1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0px 10px;
+	font-size: 21px;
+	color: #fff;
+}
+
+nav > ul {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 5px 14px;
+}
+
+nav > ul > li {
+	position: relative;
+	display: inline-block;
+	padding: 0px 3px;
+}
+
+nav > ul > li a {
+	color: #89aaaa;
+	text-decoration: none;
+}
+
+nav > ul > li a:visited {
+	color: #789078;
+}
+
+nav > ul > li.hoverlist:hover .hovercont {
+	opacity: 1;
+	visibility: visible;
+	transition: 1s;
+}
+
+nav > ul > li .hovercont {
+	position: absolute;
+	top: 100%;
+	right: 10px;
+	padding: 6px;
+	background: #00000090;
+	color: #fff;
+	visibility: hidden;
+	opacity: .3;
+}
+
+nav > ul > li .hovercont > ul {
+	position: relative;
+}
+
+nav > ul > li .hovercont > ul .subhover {
+	visibility: hidden;
+	position: absolute;
+	top: 1%;
+	left: 103%;
+}
+
+nav > ul > li .hovercont > ul:hover .subhover {
+	visibility: visible;
+}
+
+nav > ul > li .hovercont > ul .subhover ul > li {
+	background: #00000056;
+	padding: 6px;
+}
+
+.wrapper {
+	max-width: 100%;
+}
+
+aside {
+	float: right;
+	width: 400px;
+	margin: 5px 40px 0px 0px;
+}
+
+aside article {
+	width: 100%;
+	margin: -5px 0px 15px 0px;
+	background: #fff;
+	border: 1px solid #438a38;
+	border-radius: 14px;
+	overflow: hidden;
+	color: #000;
+}
+
+aside article h3 {
+	padding: 10px 5px;
+	background: #438a38;
+	color: #fff;
+	border-radius: 10px 10px 0px 0px;
+}
+
+aside article p {
+	padding: 6px 10px 5px 10px;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1.390em;
+}
+
+aside article > ul {
+	margin: 10px 0px;
+	text-align: center;
+}
+
+aside article > ul > li a {
+	display: inline-block;
+	color: #438a38;
+	background: url(../images/arrowrightgreen.svg) no-repeat;
+	background-size: 16px 16px;
+	background-position: -3px 4px;
+	padding: 0px 0px 3px 10px;
+	margin-top: 2px;
+	border-bottom: 1px dashed #438a38;
+}
+
+main {
+	max-width: 800px;
+	margin: 20px 0px 30px 80px;
+}
+
+main article {
+	max-width: 100%;
+	margin: 15px 0px 0px 0px;
+	background: #fff;
+	border: 1px solid #438a38;
+	overflow: hidden;
+	color: #000;
+}
+
+main article#resp {
+	padding: 5px 10px;
+}
+
+main article#resp .search {
+	position: relative;
+}
+
+main article#resp .search input {
+	display: block;
+	width: 90%;
+	height: 25px;
+	margin: 10px auto;
+	background: #deb32656 fixed;
+	border: 1px solid #704732;
+	border-radius: 10px;
+}
+
+main article#resp .search img {
+	position: absolute;
+	right: 60px;
+	top: 2px;
+	width: 18px;
+	transform: rotate(90deg);
+	background: #ffffff50;
+	border-radius: 50%;
+	padding: 2px;
+}
+
+main article#resp ul {
+	text-align: center;
+}
+
+main article#resp ul > li > a {
+	display: inline-block;
+	color: #438a38;
+	background: url(../images/arrowrightgreen.svg) no-repeat;
+	background-size: 16px 16px;
+	background-position: -3px 4px;
+	padding: 0px 0px 3px 10px;
+	margin-top: 2px;
+	border-bottom: 1px dashed #438a38;
+}
+
+main article h2 {
+	padding: 10px 5px;
+	background: #438a38;
+	color: #fff;
+}
+
+main article h3 {
+	padding: 10px 0px 5px 0px;
+	margin: 5px 10px;
+	font-family: 'roboto', sans-serif;
+	color: #438a38;
+	border-bottom: 1px solid #438a38;
+}
+
+main article > p {
+	padding: 10px;
+	font-weight: 300;
+	font-size: 19px;
+	color: #4a4f4a;
+	line-height: 1.350em;
+}
+
+main article .imgcont {
+	width: auto;
+}
+
+main article .gallery figure {
+	position: relative;
+	display: inline-block;
+	margin: 0px 0px 10px 30px;
+	padding: 5px 0px;
+}
+
+main article .gallery figure img {
+	width: 190px;
+	height: 180px;
+	background: #ddd;
+	border: 1px solid #909019;
+	border-radius: 5px;
+}
+
+main article .gallery figure .caption {
+	visibility: hidden;
+	position: absolute;
+	top: 10px;
+	right: 5px;
+	width: 80px;
+	height: 28px;
+	background: #00000098;
+	color: #fff;
+	text-align: center;
+	border: 3px solid #deb326;
+	border-radius: 15px;
+}
+
+main article .gallery figure:hover p.caption {
+	transition: 1s;
+	visibility: visible;
+}
+
+main article .gallery button#seeMore {
+	display: block;
+	margin: 10px auto;
+	padding: 7px;
+	background: #438a38;
+	border: none;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+}
+
+footer {
+	background: #0000009f;
+	padding: 30px 4px 20px 4px;
+}
+
+footer p {
+	text-align: center;
+	color: #fff;
+}
+
+@media only screen and (min-width:1325px) {
+	article#resp { display: none }
+}
+
+@media only screen and (max-width:1324px) {
+	aside { display: none; }
+	main { max-width: 1100px; margin-left: 30px }
+	main article .gallery figure img { width: 300px; height: 290px; }
+}
+
+@media only screen and (max-width:1088px) {
+
+	main article .gallery figure img { max-width: 200px; max-height: 190px; }
+}
+
+@media only screen and (max-width:995px) {
+	main article { margin: 10px 0px 10px 0px }
+	main { margin-left: 30px }
+}
+
+@media only screen and (max-width:780px) {
+	main { margin: auto; }
+}
+
+@media only screen and (min-width:780px) {
+	article { border-radius: 14px }
+}
+
+@media only screen and (max-width:670px) {
+	header nav { display: none; }
+	main article .gallery figure img { max-width: 230px; max-height: 220px; }
+}
+
+@media only screen and (max-width:570px) {
+	main article > img { max-width: 510px }
+}
+
+@media only screen and (max-width:460px) {
+	main article > img { max-width: 400px }	
+}
+
+@media only screen and (max-width:390px) {
+	main article .gallery figure img { max-width: 110px; max-height: 100px; }
+}
+
+@media only screen and (max-width:335px) {
+	main article > img { max-width: 300px }
+	main article .gallery figure { margin-left: 10px; }
+}
+
+@media only screen and (max-width:260px) {
+	main article > img { max-width: 230px }
+	main article .gallery figure img { width: 70px; height: 80px; }
+	
+}
