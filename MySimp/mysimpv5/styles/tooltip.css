@@ -2,12 +2,12 @@
 
 /* I MADE THIS TOOLTIP, I DON'T COPY THE CODE!!! */
 
-main article > p .tooltip {
+main article p .tooltip {
 	position: relative;
 	color: #9bac6b;
 }
 
-main article > p .tooltip .hidden {
+main article p .tooltip .hidden {
 	visibility: hidden;
 	position: absolute;
 	bottom: 100%;
@@ -19,65 +19,24 @@ main article > p .tooltip .hidden {
 	padding-bottom: 9px;
 }
 
-main article > p .tooltip .hidden img.imgheader {
+main article p .tooltip .hidden img.imgheader {
 	position: absolute;
 	bottom: 100%;
 	right: 0;
 }
 
-main article > p .tooltip .hidden .callout {
+main article p .tooltip .hidden .callout {
 	position: absolute;
 	bottom: -18px;
 	right: 68px;
 	width: 30px;
 }
 
-main article > p .tooltip .hidden .header {
+main article p .tooltip .hidden .header {
 	font-size: 25px;
 	font-weight: 900;
 }
 
-main article > p .tooltip:hover .hidden {
-	visibility: visible;
-}
-
-menu .tooltip {
-	position: relative;
-	color: #9bac6b;
-}
-menu .tooltip .hidden {
-	visibility: hidden;
-	position: absolute;
-	bottom: -410px;
-	left: -430px;
-	width: 450px;
-	height: 400px;
-	background: #56203c;
-	color: #fff;
-	text-align: center;
-	padding-bottom: 9px;
-	z-index: 10000000;
-}
-
-menu .tooltip .hidden img.imgheader {
-	position: absolute;
-	bottom: 100%;
-	right: 0;
-}
-
-menu .tooltip .hidden .callout {
-	position: absolute;
-	top: -18px;
-	right: -8px;
-	width: 32px;
-	transform: rotate(180deg);
-}
-
-menu .tooltip .hidden .header {
-	font-size: 25px;
-	font-weight: 900;
-}
-
-menu .tooltip:hover .hidden {
+main article p .tooltip:hover .hidden {
 	visibility: visible;
 }

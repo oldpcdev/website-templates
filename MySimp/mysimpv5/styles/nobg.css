@@ -18,23 +18,25 @@ body {
 	min-height: 100%;
 	max-width: 100vw;
 	font-family: 'source sans pro', ubuntu, sans-serif;
-	background: #dbdbdb url(../images/bg.jpg) no-repeat fixed;
+	background: #dbdbdb;
 	background-size: cover;
 }
 
 .container {
 	max-width: 100%;
-	max-height: 100%;
-	padding: 30px 0px 0px 0px;
+	min-height: 100%;
+	padding: 10px 0px 0px 0px;
 	background: #00000050;
 	background-attachment: fixed;
 }
 
 .wrapper {
-	max-width: 1100px;
-	margin: 0px auto 20px auto;
+	max-width: 1350px;
+	margin: 0px auto 10px auto;
 	background: #fff;
 	color: #000;
+	border: 9px solid #0000004b;
+	border-radius: 10px;
 }
 
 header {
@@ -56,9 +58,8 @@ header nav {
 }
 
 header nav > ul {
-	background: linear-gradient(to bottom, #9d6976, #9b5966, #64213f);
-	padding: 16px 13px;
-	border-radius: 13px;
+	background: linear-gradient(to bottom, #9b5966, #64213f);
+	padding: 20px 15px;
 }
 
 header nav > ul > li {
@@ -108,7 +109,7 @@ main article#mainTop {
 
 main article.top > p {
 	padding: 5px 0px;
-	font-size: 18px;
+	font-size: 23px;
 	font-weight: 500;
 	color: #7f5f7f;
 }
@@ -150,18 +151,6 @@ main article.top section.content > table td p {
 	font-size: 17px;
 	text-align: center;
 	color: #89a866;
-}
-
-main article.top section.content > table {
-	margin: 20px auto 30px auto;
-	border-collapse: collapse;
-}
-
-main article#mainTop > h3 {
-	padding: 5px 0px;
-	font-size: 24px;
-	font-weight: 500;
-	color: #9bac6b;
 }
 
 main article.bottom h3 {
@@ -256,12 +245,12 @@ main article#mainLeft {
 }
 
 main article#mainCenter {
-	max-width: 400px;
+	max-width: 620px;
 	float: left;
 }
 
 main article#mainRight {
-	max-width: 320px;
+	max-width: 350px;
 	float: right;
 }
 
@@ -270,10 +259,7 @@ main articlemainTop section#mainHiddenLeft {
 }
 
 main article#mainTop section#mainHiddenLeft > p {
-	padding: 5px 0px;
-	font-size: 18px;
-	font-weight: 500;
-	color: #7f5f7f;
+	color: #09010a;
 }
 
 main article#mainTop section#mainHiddenLeft .block {
@@ -314,6 +300,13 @@ main article#mainTop section#mainHiddenLeft h4 {
 	font-size: 20px;
 	font-weight: 500;
 	color: #9bac6b;
+}
+
+main article#mainTop section#mainHiddenLeft > p {
+  padding: 5px 0px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #7f5f7f;
 }
 
 footer {
