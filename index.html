@@ -3,214 +3,101 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="theme-color" content="#576757"/>
 	<title>website-templates</title>
 	<link rel="shortcut icon" href="images/web.svg"/>
 	<style>
-
-		@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@500&family=Open+Sans:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap');
-		
-		sub, sup { font-size: 8px; }
-		
-		a:link { color: #2d5287; text-decoration: none; }
-			
-		a:visited { color: #6451b5 }
-		
-		a:hover { text-decoration: underline; color: #0089ad }
-		
-		span.code { font-family: 'jetbrains mono', monospace; background: #cccccc; padding: 4px 4px 2px 4px; }
-		
-		.clear {
-			clear: both;
-			display: block;
-			}
-		
-		h1 { font-size: 38px } h2 { font-size: 35px } h3 { font-size: 32px } h4 { font-size: 29px } h5 { font-size: 26px } h6 { font-size: 20px }
-		
-		li { list-style: none }
-		
-		* { margin: 0px; padding: 0px }
-		
-		body {
-			max-height: 100vh;
-			max-width: 100vw;
-			background: linear-gradient(to top, #343434, #576757, #879797) fixed;
-			font-family: 'open sans', arial, trebuchet, sans-serif;
-			color: #242424;
-			margin-bottom: 10px;
-			}
-			
-		.container { max-width: 100%; padding-bottom: 10px; }
-		
-		.wrapper {
-			max-width: 890px;
-			height: auto;
-			margin: 20px auto 5px auto;
-			background: #fff;
-			border-radius: 15px;
-			overflow: hidden;
-			}
-		
-		header {
-			position: relative;
-			height: 280px;
-			background: url(images/header.jpg) no-repeat;
-			background-size: 100% 100%;
-			color: #fff;
-			text-shadow: 2px 1px 2px black;
-			
-			}
-			
-			header .banner {
-			width: 100%;
-			height: 100%;
-			background: #45454581
-			}
-			
-			header .headertitle {
-			position: absolute;
-			top: 0;
-			left: 0;
-			margin: 30px 0px 0px 20px;
-			}
-			
-		aside {
-			position: relative;
-			float: left;
-			width: 230px;
-			margin: 10px 10px 0px 20px;
-			padding: 5px 5px 5px 5px;
-			border: 1px solid black;
-			border-radius: 10px;
-			}
-			
-		aside h6 {
-			width: 70%;
-			padding-bottom: 4px;
-			border-bottom: 1px solid #999999;
-			font-family: 'playfair display', serif;
-			font-style: italic;
-			text-align: center;			}
-			
-		aside img {
-			width: 50px;
-			position: absolute;
-			top: 10;
-			right: 0;
-			}
-			
-		aside ul.index {
-			padding-top: 6px;
-			}
-			
-		aside ul.index li {
-			padding-left: 22px;
-			padding-bottom: 5px;
-			background: url(images/rightarrow.svg) no-repeat;
-			background-size: 22px 22px;
-			}
-			
-		aside ul.sub {
-			padding-top: 6px;
-			padding-left: 10px
-			}
-			
-		aside ul.sub li {
-			padding-left: 27px;
-			padding-bottom: 2px;
-			margin-bottom: 10px;
-			border-bottom: 1px solid #0000003a;
-			background: url(images/leftarrow.svg) no-repeat;
-			background-position: 0px -7px;
-			background-size: 25px 25px;
-			}	
-			
-		main {
-			float: right;
-			width: 600px;
-			margin: 10px 10px 0px 0px;
-			}
-			
-		article {
-			padding-top: 10px;
-			}
-			
-		article h4, article h5 {
-			padding: 0px 0px 20px 0px;
-			}
-			
-		article#page h4 {
-			animation-name: hshadow;
-			animation-duration: 3s;
-			animation-fill-mode: forwards;
-			}
-			
-		footer {
-			background: #676767;
-			padding: 10px 2px 5px 2px;
-			color: #fff;
-			text-align: center;
-			}
-			
-		@media only screen and (max-width:1050px) { .fmog {display: none } }
-		@media only screen and (max-width:950px) {
-			.wrapper { margin: 0px 0px 5px 0px ; border-radius: 0px; }
-			}
-			
-		@media only screen and (max-width:890px) {
-			aside { display: none }
-			main { float: none; margin: auto; }
-			article p { font-size: 1.1em; padding: 0px 10px 5px 10px; }
-			article h4, article h5 { font-size: 24px; padding: 0px 0px 10px 10px; }
-			}
-			
-		@media only screen and (max-width:595px) { article p { max-width: 500px; } }
-		@media only screen and (max-width:525px) { article p { max-width: 40%; text-align: justify } }
-		@media only screen and (max-width:350px) { article h4, article h5 { font-size: 18px; } }
-		
-		@keyframes hshadow {
-			0%{text-shadow: none};
-			25%{text-shadow: 2px 2px 1px #576757}
-			50%{text-shadow: 1px 1px 2px #576757}
-			75%{text-shadow: 0px 0px 2px #576757}
-			100%{text-shadow: 2px 2px 2px #576757}
-			}
+		@import url('styles/style.css');
+		@import url('styles/responsive.css');
 	</style>
 </head>
 <body>
-	<a class="fmog" href="https://github.com/oldpcdev/website-templates.git"><img style="position: fixed; top: 0; left: 0; z-index: 2;" decoding="async" loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_darkblue_121621.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
 	<div class="container">
 		<div class="wrapper">
 			<header>
-				<div class="banner">
-					<div class="headertitle"><h2>The website-templates Index</h2></div>
+				<div id="banner">
+					<div class="headertitle"><h2><span style="color: #3bcc67">website</span><span style="color: #9fae34">-templates</span></h2></div>
 				</div>
+					
 			</header>
-			<aside>
-				<img class="doc" src="images/doc.svg">
-				<h6>Index</h6>
-				<p></p>
-				<ul class="index">
-					<li>
-						<a href="#MySimp">MySimpleTemplates</a>
-						<ul class="sub">
-							<li><a href="https://oldpcdev.github.io/website-templates/MySimp/mysimpV1">MySimpV1</a></li>
-							<li><a href="https://oldpcdev.github.io/website-templates/MySimp/mysimpV2">MySimpV2</a></li>
-							<li><a href="https://oldpcdev.github.io/website-templates/MySimp/mysimpV3">MySimpV3</a></li>
-							<li><a href="https://oldpcdev.github.io/website-templates/MySimp/mysimpwiki">MySimpleWiki (working)</a></li>
-							<li><a href="https://oldpcdev.github.io/website-templates/MySimp/mysimpv4">MySimpV4</a></li>
-							<li><a href="https://oldpcdev.github.io/website-templates/MySimp/mysimpv5">MySimpV5</a></li>
-						</ul>
-					</li>
-					<li><a href="https://oldpcdev.github.io/website-templates/Clay">Clay</a></li>
-					<li><a href="https://oldpcdev.github.io/website-templates/Glasses">Glasses</a></li>
-					<li><a href="https://oldpcdev.github.io/website-templates/PureBlue">PureBlue (Unresponsive)</a></li>
-					<li><a href="https://oldpcdev.github.io/website-templates/GrayFlavor">GrayFlavor</a></li>
-				</ul>
-			</aside>
 			<main>
+				<article id="templates"> <!-- sorry for the images -->
+					<h3>Templates</h3>
+					<section>
+						<table>
+							<tr>
+								<td>
+									<a href="MySimp/mysimpv5/index.html">
+										<figure>
+											<img src="images/mysimpv5.jpg">
+											<p>MySimpV5</p>
+										</figure>
+									</a>
+								</td>
+								<td>
+									<a href="MySimp/mysimpv4/index.html">
+										<figure>
+											<img src="images/mysimpv4.jpg">
+											<p>MySimpV4</p>
+										</figure>
+									</a>
+								</td>
+								<td>
+									<a href="MySimp/mysimpV3/index.html">
+										<figure>
+											<img src="images/mysimpv3.jpg">
+											<p>MySimpV3</p>
+										</figure>
+									</a>
+								</td>
+								<td>
+									<a href="MySimp/mysimpV2/index.html">
+										<figure>
+											<img src="images/mysimpv2.jpg">
+											<p>MySimpV2</p>
+										</figure>
+									</a>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<a href="MySimp/mysimpV1/index.html">
+										<figure>
+											<img src="images/mysimpv1.jpg">
+											<p>MySimpV1</p>
+										</figure>
+									</a>
+								</td>
+								<td>
+									<a href="clay/index.html">
+										<figure>
+											<img src="images/clay.jpg">
+											<p>Clay</p>
+										</figure>
+									</a>
+								</td>
+								<td>
+									<a href="grayflavor/index.html">
+										<figure>
+											<img src="images/grayflavor.jpg">
+											<p>GrayFlavor</p>
+										</figure>
+									</a>
+								</td>
+								<td>
+									<a href="glasses/index.html">
+										<figure>
+											<img src="images/glasses.jpg">
+											<p>Glasses</p>
+										</figure>
+									</a>
+								</td>
+							</tr>
+						</table>
+					</section>
+				</article>
+				
 				<article id="about">
 					<h4>About <span class="code">website-templates</span></h4>
 					<p><span class="code">website-templates</span> is a project where I "develop" pages for anyone who is interested in making a website. I make this project to test and share my experience. You can use my templates if you respect the copyleft of the GPL V3. Please open your mind.<p>
@@ -220,10 +107,6 @@
 					<h5>About me</h5>
 					<P>I'm Bruno Santos and i'm learning Javascript and PHP. i live in Campinas, Brazil.</P>
 					<p><a target="_blank" href="https://oldpcdev.blogspot.com">Blog</a> <a target="_blank" href="https://instagram.com/bruno_santoslnx">Instagram (non free software site)</a> <a href="https://ieji.de/@oldpcuser">Mastodon</a> </p> 
-				</article>
-				
-				<article id="page">
-					<h4 style="color: #9a9a9a; font-style: italic; font-family: 'playfair display';">This page should change over time</h4>
 				</article>
 				
 			</main>

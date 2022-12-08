@@ -84,32 +84,6 @@ main {
     padding-right: 50px;
 }
 
-.announcements {
-    padding-bottom: 5px;
-    border-bottom: 3px solid #ff5100;
-    margin: auto;
-    display: block;
-}
-
-.announcements section {
-    display: inline-block;
-    margin: 10px 0px 0px 10px;
-    width: 30%;
-    background-color: #fdfdfd;
-}
-
-.announcements section img {
-    display: block;
-    margin: 10px auto;
-    width: 70%;
-    height: 96px;
-}
-
-.announcements section .text {
-    text-align: center;
-    font-family: 'source sans pro'
-}
-
 .wrapper {
     margin: 10px 10px;
     color: #181818;
@@ -119,6 +93,34 @@ main {
     aside {
         display: none;
     }
+}
+
+#announcement {
+	
+}
+
+#announcement table {
+	margin: 10px auto;
+}
+
+#announcement table td {
+	display: inline-block;
+	max-width: 300px;
+	margin: 10px;
+	padding: 10px 5px;
+	background: #fff;
+	text-align: center;
+}
+
+#announcement table td img {
+	display: block;
+	margin: 0px auto 20px auto;
+	max-width: 140px;
+	height: 160px;
+}
+
+#announcement table td h3 {
+	font-weight: 400;
 }
 
 aside {
