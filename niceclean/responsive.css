@@ -1,0 +1,37 @@
+@charset 'utf-8';
+@media only screen and (min-width:1025px){#mobileNav{display:none}}
+@media only screen and (max-width:1024px){
+#container{padding-top:0px;}
+#wrapper{max-width:100%;}
+#header{min-height:570px;}
+#nav{display:none;}
+#footer{margin:0px 0px 0px 0px;padding:10px;background:#fff;border-top:1px solid #dbdbdb;}
+.figure-right{display:none}
+.figure-left{display:none}
+.figure p{display:none}
+.btn{margin:10px 10px 0px 00px;}
+.tagbtn{margin:10px 70px 0px 0px;}
+.left{float:none;max-width:100%;}
+.left .figure{padding:0px 70px;}
+.left .figure img{margin:auto;width:63%;}
+.left p{padding:0px 20px;}
+.right{float:none;max-width:100%;padding:10px 30px;}
+.right .figure img{margin:auto;width:63%;}
+table.dataTable td {padding:10px 5px;}
+}
+@media only screen and (max-width:480px){
+#header .title{top:150px;}
+table.dataTable th{padding:5px 5px;font-size:14px;}
+table.dataTable td{padding:10px 5px;font-size:14px;text-align:center;}
+.left .figure img{width:100%;}
+.right .figure img{width:100%;}
+#top .figure{max-width:100%;}
+.left .figure{padding:0px 10px;}
+.left h1,.left h2,.left h3,.left h4,.left h5,.left h6{padding:0px 20px;}
+.post{padding:0px 20px;}
+}
+@media only screen and (max-width:360px){#header .title{top:100px;}}
+@media only screen and (max-width:280px){
+.left p{padding:0px 0px;}
+.right{float:none;max-width:100%;padding:10px 10px;}
+}

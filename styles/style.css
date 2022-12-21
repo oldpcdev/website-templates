@@ -77,38 +77,37 @@ article#templates h3 {
 	color: #0adc90;
 }
 
-article#templates section {
+article#templates #templateImages {
 	max-width: 100%;
 }
 
-article#templates section table {
+article#templates #templateImages table {
 	max-width: 100%;
 	border-collapse: collapse;
 }
 
-article#templates section table td {
-	max-width: 100%;
+article#templates #templateImages table td {
+	max-width: 220px;
 	padding: 10px 3px 20px 2px;
-	
 }
 
-article#templates section table td figure {
+article#templates #templateImages table td figure {
 	position: relative;
 	border: 1px solid black;
 	overflow: hidden;
 }
 
-article#templates section table td figure img {
-	width: 240px;
-	height: 260px;
+article#templates #templateImages table td figure img {
+	width: 260px;
+	height: 240px;
 }
 
-article#templates section table td figure img:hover {
+article#templates #templateImages table td figure img:hover {
 	opacity: .3;
 	transition: .3s;
 }
 
-article#templates section table td figure p {
+article#templates #templateImages table td figure p {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
