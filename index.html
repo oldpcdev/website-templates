@@ -1,126 +1,106 @@
-<!-- website-templates Repository Index -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"/>
+	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>website-templates</title>
-	<link rel="shortcut icon" href="images/web.svg"/>
-	<style>
-		@import url('styles/style.css');
-		@import url('styles/responsive.css');
-	</style>
+	<title>Nice CSS</title>
+	<link rel="shortcut icon" href="images/web.svg">
+	<link rel="stylesheet" href="styles/style.css" media="screen">
+	<link rel="stylesheet" href="styles/responsive.css" media="screen">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
 </head>
 <body>
-	<div class="container">
-		<div class="wrapper">
-			<header>
+	<div id="container">
+		<div id="wrapper">
+			<header id="header">
 				<div id="banner">
-					<div class="headertitle"><h2><span style="color: #3bcc67">website</span><span style="color: #9fae34">-templates</span></h2></div>
+					<h1><a href="https://github.com/oldpcdev/website-templates" target="_blank">Nice CSS</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="#">Item</a></li>
+							<li><a href="#">Item</a></li>
+							<li><a href="#">Item</a></li>
+							<li><a href="#">Item</a></li>
+						</ul>
+					</nav>
 				</div>
-					
+				<div class="clear"></div>
 			</header>
-			<main>
-				<article id="templates"> <!-- sorry for the images -->
+			<div id="menu">
+				<ul>
+					<li class="current"><a href="#">Item</a></li>
+					<li><a href="#">Item</a></li>
+					<li><a href="#">Item</a></li>
+					<li><a href="#">Item</a></li>
+				</ul>
+			</div>
+			<main id="main">
+				<div id="content">
+					<h1>Nice CSS</h1>
 					<h3>Templates</h3>
-					<div id="templateImages">
-						<table>
-							<tr>
-								<td>
-									<a href="niceclean/index.html">
-										<figure>
-											<img src="images/niceclean.jpg">
-											<p>NiceClean</p>
-										</figure>
-									</a>
-								</td>
-								<td>
-									<a href="MySimp/mysimpv5/index.html">
-										<figure>
-											<img src="images/mysimpv5.jpg">
-											<p>MySimpV5</p>
-										</figure>
-									</a>
-								</td>
-								<td>
-									<a href="MySimp/mysimpv4/index.html">
-										<figure>
-											<img src="images/mysimpv4.jpg">
-											<p>MySimpV4</p>
-										</figure>
-									</a>
-								</td>
-								<td>
-									<a href="MySimp/mysimpV3/index.html">
-										<figure>
-											<img src="images/mysimpv3.jpg">
-											<p>MySimpV3</p>
-										</figure>
-									</a>
-								</td>
-								<td>
-									<a href="MySimp/mysimpV2/index.html">
-										<figure>
-											<img src="images/mysimpv2.jpg">
-											<p>MySimpV2</p>
-										</figure>
-									</a>
-								</td>
-							</tr>
-							
-							<tr>
-								<td>
-									<a href="MySimp/mysimpV1/index.html">
-										<figure>
-											<img src="images/mysimpv1.jpg">
-											<p>MySimpV1</p>
-										</figure>
-									</a>
-								</td>
-								<td>
-									<a href="Clay/index.html">
-										<figure>
-											<img src="images/clay.jpg">
-											<p>Clay</p>
-										</figure>
-									</a>
-								</td>
-								<td>
-									<a href="GrayFlavor/Index.html">
-										<figure>
-											<img src="images/grayflavor.jpg">
-											<p>GrayFlavor</p>
-										</figure>
-									</a>
-								</td>
-								<td>
-									<a href="Glasses/index.html">
-										<figure>
-											<img src="images/glasses.jpg">
-											<p>Glasses</p>
-										</figure>
-									</a>
-								</td>
-							</tr>
-						</table>
+					<div id="template-container">
+						<h1 class="date">December</h1>
+						<div class="template">
+							<a href="greenbox/index.html">
+								<img src="images/greenbox.jpg" alt="template">
+								<p>GreenBox</p>
+							</a>
+						</div>
+						<div class="template">
+							<a href="niceclean/index.html">
+								<img src="images/niceclean.jpg" alt="template">
+								<p>NiceClean</p>
+							</a>
+						</div>
+						<div class="template">
+							<a href="Clay/index.html">
+								<img src="images/clay.jpg" alt="template">
+								<p>Clay</p>
+							</a>
+						</div>
+						<div class="template">
+							<a href="MySimp/mysimpv5/index.html">
+								<img src="images/mysimpv5.jpg" alt="template">
+								<p>MySimpV5</p>
+							</a>
+						</div>
+						<div class="template">
+							<a href="MySimp/mysimpv4/index.html">
+								<img src="images/mysimpv4.jpg" alt="template">
+								<p>MySimpV4</p>
+							</a>
+						</div>
+						<h1 class="date">November</h1>
+						<div class="template">
+							<a href="MySimp/mysimpV3/index.html">
+								<img src="images/mysimpv3.jpg" alt="template">
+								<p>MySimpV3</p>
+							</a>
+						</div>
+						<div class="template">
+							<a href="MySimp/mysimpV2/index.html">
+								<img src="images/mysimpv2.jpg" alt="template">
+								<p>MySimpV2</p>
+							</a>
+						</div>
+						<h1 class="date">October</h1>
+						<div class="template">
+							<a href="MySimp/mysimpV1/index.html">
+								<img src="images/mysimpv1.jpg" alt="template">
+								<p>MySimpV1</p>
+							</a>
+						</div>
 					</div>
-				</article>
-				
-				<article id="about">
-					<h4>About <span class="code">website-templates</span></h4>
-					<p><span class="code">website-templates</span> is a project where I "develop" pages for anyone who is interested in making a website. I make this project to test and share my experience. You can use my templates if you respect the copyleft of the GPL V3. Please open your mind.<p>
-				</article>
-				
-				<article id="me">
+					<h4>About</h4>
+					<p>Nice CSS is a project where I design pages for anyone who is interested in making a website. I make this project to test and share my experience. You have the freedom to use my styles however you want. But please, don't use my templates for making bad things, like a porn website. It gives people a bad impression. Attribution is not mandatory, but it would be nice if you add a link at the bottom of the page.<p>
+					<h5><a href="https://unlicense.org">License</a></h5>
+					<p>Nice CSS is licensed under <a href="https://unlicense.org">The Unlicense</a></p>
 					<h5>About me</h5>
-					<P>I'm Bruno Santos and i'm learning Javascript and PHP. i live in Campinas, Brazil.</P>
-					<p><a target="_blank" href="https://oldpcdev.blogspot.com">Blog</a> <a target="_blank" href="https://instagram.com/bruno_santoslnx">Instagram (non free software site)</a> <a href="https://ieji.de/@oldpcuser">Mastodon</a> </p> 
-				</article>
-				
+					<p>I'm Bruno Santos and i'm learning Javascript and PHP. I live in Campinas, Brazil.</p>
+				</div>
 			</main>
-			<div class="clear" style="height: 50px"></div>
-			<footer>
-				<p>&copy; oldpcdev</p>
+			<footer id="footer">
+				<p>Design by oldpcdev | Header from <a href="https://unsplash.com">unsplash</a></p>
 			</footer>
 		</div>
 	</div>

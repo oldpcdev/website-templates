@@ -30,7 +30,7 @@ table.dataTable td{padding:10px 5px;font-size:14px;text-align:center;}
 .left h1,.left h2,.left h3,.left h4,.left h5,.left h6{padding:0px 20px;}
 .post{padding:0px 20px;}
 }
-@media only screen and (max-width:360px){#header .title{top:100px;}}
+@media only screen and (max-width:360px){#header .title{top:160px;}}
 @media only screen and (max-width:280px){
 .left p{padding:0px 0px;}
 .right{float:none;max-width:100%;padding:10px 10px;}
